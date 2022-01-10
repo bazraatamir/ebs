@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #1d1d1d;
+}
+nav{
+    width: 100%;
+    height:55px;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #666;
+}
+nav .logo{
+    width: 20%;
+    height: 100%;
+}
+nav .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+nav .menu{
+    width: 15%;
+    height: 100%;
+}
+nav .menu ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+nav .menu ul li{
+    list-style: none;
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: #666 1px solid;
+}
+nav .menu ul li i{
+    font-size: 16px;
+    color: #999;
+}
+
+.big{
+    width: 100%;
+    margin-top: 20px;
+}
+.big .container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.big .container .container-child{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+.big .container .container-child .child{
+    width: 25%;
+    height: 200px;
+    background-color: #999;
+    position: relative;
+}
+.big .container .container-child .child .card-img{
+    width: 100%;
+    height: 100%;
+
+}
+.big .container .container-child .child .card-img img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.big .container .container-child .child .card-text{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+.big .container .container-child .child .card-text:hover{
+    color: blue;
+    cursor: pointer;
+}
+.big .container button{
+   display: block;
+   width: 100%;
+   height: 60px;
+}
