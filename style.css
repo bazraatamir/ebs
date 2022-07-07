@@ -3,89 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #1d1d1d;
-}
-nav{
+.menu{
     width: 100%;
-    height: 61px;
-    border-bottom: 1px #666 solid;
-    display: flex; 
-    justify-content: space-between;
+    height: 60px;
+    background-color:#00B1D2FF;
 }
-nav .logo{
+.menu .logo{
     width: 20%;
     height: 100%;
-    padding: 10px;
+    display: inline-block;
+    float: left;
 }
-nav .logo img{
-    width: 100%;
+.menu .logo h1{
+    text-align: center;
+    margin-top: 10px;
+    color: #FDDB27FF;
+    text-transform: uppercase;
+}
+.menu .menu-bar{
+    width: 50%;
     height: 100%;
-    object-fit: contain;
+    display: inline-block;
+    float:right;
 }
-nav .menu{
-    width: 15%;
-    height: 100%;
-    display: flex;
-    position: relative;
-    
+.menu .menu-bar ul{
+    list-style: none;
 }
-nav .menu .menu-item{
-    width: 33%;
-    height: 100%;
-    border-left: 1px solid #666;
-}
-nav .menu .test{
-    position: absolute;
-    width: 20px;
-    top: 60px;
-    display: none;
-    color: white;
-}
-#checkbox:checked ~ .test{
-    display: block;
-}
-nav .menu .menu-item label i{
-    font-size: 20px;
-    color: #666;
-}
-.big{
-    width: 100%;
+.menu .menu-bar ul li{
+    display: inline-block;
     margin-top: 20px;
-}
-.big .big-container{
-    width: 70%;
-    margin: auto;
-}
-.big .big-container .container{
-    display: flex;
-    width: 100%;
-    gap: 1px;
-}
-.big .big-container .container .child{
-    width: 25%;
-    height: 200px;
-    background-color: #666;
-    position: relative;
-}
-.big .big-container .container .child .cards-img{
-    width: 100%;
-    height: 100%;
-}
-.big .big-container .container .child .cards-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.big .big-container .container .child .cards-text{
-    position: absolute;
-    top:0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    
-}
-.big .big-container .container .child .cards-text p{
-   margin-top: 180px;
+    margin-left: 50px;
+    color: #FDDB27FF;
+    text-transform: capitalize;
+    font-size: 20px;
 }
